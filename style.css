@@ -1,0 +1,167 @@
+body {
+  background-color: #232323;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  background-image: url("images/stack3backgroundhorizontal.png");
+  background-position: center top;
+  background-size: cover;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+@media (max-width: 1200px) {
+  header {
+    background-image: url("images/stack1vertical.png");
+    background-position: center center;
+    background-size: cover;
+  }
+}
+header img {
+  display: block;
+}
+header .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+@media (max-width: 1200px) {
+  header .content {
+    height: 100vh;
+  }
+}
+header .content .logo {
+  max-width: 350px;
+}
+@media (max-width: 1200px) {
+  header .content .logo {
+    max-width: 300px;
+  }
+}
+header .content .stack2 {
+  max-width: 300px;
+}
+@media (max-width: 1200px) {
+  header .content .stack2 {
+    max-width: 300px;
+  }
+}
+header img.stack1 {
+  object-fit: contain;
+  height: 800px;
+}
+@media (max-width: 1200px) {
+  header img.stack1 {
+    display: none;
+  }
+}
+
+section {
+  padding: 24px 86px;
+}
+section h1 {
+  padding-bottom: 24px;
+  font-weight: 700;
+  font-size: 92px;
+  color: white;
+}
+@media (max-width: 1200px) {
+  section {
+    padding: 12px 24px;
+  }
+  section h1 {
+    font-size: 61px;
+  }
+}
+
+section#presta .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 54px;
+}
+section#presta .content .card {
+  background-color: #d9d9d9;
+  border-radius: 24px;
+  padding: 24px;
+  flex: 400px 1 1;
+}
+section#presta .content .card img {
+  display: block;
+  border-radius: 24px;
+  margin: 0 auto;
+  object-fit: contain;
+  height: 331px;
+  box-shadow: 0 0 0 7px white;
+}
+section#presta .content .card h2 {
+  text-align: center;
+  padding: 16px;
+}
+section#presta .content .card h2 span {
+  color: #4d4d4d;
+}
+section#presta .content .card p.desc {
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+section#presta .content .card .tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+section#presta .content .card .tags p {
+  background-color: white;
+  border-radius: 24px;
+  font-size: 12px;
+  padding: 4px 6px;
+  margin: 0;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+@media (max-width: 1200px) {
+  section#presta .content {
+    flex-direction: column;
+  }
+  section#presta .content .card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+section#contact {
+  text-align: center;
+  padding-bottom: 280px;
+}
+section#contact .content .social {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  color: white;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+section#contact .content .social img {
+  width: 44px;
+  height: 46px;
+  cursor: pointer;
+}
+section#contact .content .social .link {
+  margin-top: 0;
+}
+section#contact .content a.link {
+  display: block;
+  margin-top: 16px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+section#contact .content a.link:hover {
+  text-decoration: underline;
+}
